@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com/" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
@@ -50,7 +53,8 @@
 
                     <div class="flex items-center gap-2 justify-between">
                         <p class="font-bold text-lg">R$18,90</p>
-                        <button class="bg-gray-900 px-5 rounded" data-name="Hamburguer Smash" data-price="18.90">
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Hamburguer Smash"
+                            data-price="18.90">
                             <i class="fa fa-cart-plus text-lg text-white"></i>
                         </button>
                     </div>
@@ -70,7 +74,8 @@
 
                     <div class="flex items-center gap-2 justify-between">
                         <p class="font-bold text-lg">R$32,90</p>
-                        <button class="bg-gray-900 px-5 rounded" data-name="Hamburguer Duplo" data-price="32.90">
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Hamburguer Duplo"
+                            data-price="32.90">
                             <i class="fa fa-cart-plus text-lg text-white"></i>
                         </button>
                     </div>
@@ -90,7 +95,8 @@
 
                     <div class="flex items-center gap-2 justify-between">
                         <p class="font-bold text-lg">R$52,90</p>
-                        <button class="bg-gray-900 px-5 rounded" data-name="Hamburguer Salad" data-price="52.90">
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Hamburguer Salad"
+                            data-price="52.90">
                             <i class="fa fa-cart-plus text-lg text-white"></i>
                         </button>
                     </div>
@@ -110,7 +116,8 @@
 
                     <div class="flex items-center gap-2 justify-between">
                         <p class="font-bold text-lg">R$23,90</p>
-                        <button class="bg-gray-900 px-5 rounded" data-name="Hamburguer da Casa" data-price="23.90">
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Hamburguer da Casa"
+                            data-price="23.90">
                             <i class="fa fa-cart-plus text-lg text-white"></i>
                         </button>
                     </div>
@@ -139,7 +146,8 @@
 
                     <div class="flex items-center gap-2 justify-between">
                         <p class="font-bold text-lg">R$5,90</p>
-                        <button class="bg-gray-900 px-5 rounded" data-name="Coca Cola lata" data-price="5.90">
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Coca Cola lata"
+                            data-price="5.90">
                             <i class="fa fa-cart-plus text-lg text-white"></i>
                         </button>
                     </div>
@@ -157,7 +165,8 @@
 
                     <div class="flex items-center gap-2 justify-between">
                         <p class="font-bold text-lg">R$5,90</p>
-                        <button class="bg-gray-900 px-5 rounded" data-name="Guarana lata" data-price="5.90">
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Guarana lata"
+                            data-price="5.90">
                             <i class="fa fa-cart-plus text-lg text-white"></i>
                         </button>
                     </div>
@@ -170,7 +179,7 @@
     <!-- FIM MENU -->
 
     <!-- MODAL CART -->
-    <div class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] hidden items-center justify-center">
+    <div class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] hidden items-center justify-center" id="cart-modal">
         <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
             <h2 class="text-center font-bold text-2xl mb-2">Meu carrinho</h2>
 
@@ -187,7 +196,7 @@
 
             <div class="flex items-center justify-between mt-5 w-full">
                 <button id="close-modal-btn">Fechar</button>
-                <button id="checkkout-btn" class="bg-green-500 text-white px-4 py-1 rounded">Finalizar Pedido</button>
+                <button id="checkout-btn" class="bg-green-500 text-white px-4 py-1 rounded">Finalizar Pedido</button>
             </div>
         </div>
     </div>
@@ -205,6 +214,8 @@
 
     <!-- FIM BUTTON CART FOOTER -->
 
+    <script src="./script.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 </body>
 
 </html>
